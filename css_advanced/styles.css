@@ -1,0 +1,447 @@
+:root {
+  --purple: #c271ff;
+  --dark: #071629;
+  --light: #f8f8f8;
+  --text: #071629;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  padding: 2rem 7%;
+}
+
+header > div,
+footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+header > div > a img {
+  width: 170px;
+  height: auto;
+}
+
+header > div > div {
+  display: flex;
+  gap: 2.5rem;
+}
+
+main > section {
+  padding: 6rem 7%;
+}
+
+main > section:first-child {
+  min-height: 800px;
+  padding-top: 12rem;
+  color: #fff;
+  text-align: center;
+  background:
+    linear-gradient(90deg, rgba(7, 22, 41, 0.8), rgba(7, 22, 41, 0.35)),
+    url("https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=2000&q=85")
+    center / cover;
+}
+
+main > section:first-child > div:first-child {
+  max-width: 900px;
+  margin: 0 auto 8rem;
+}
+
+main h1 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1;
+}
+
+main > section:first-child p {
+  margin: 0 auto 2rem;
+  max-width: 620px;
+  font-size: 1.25rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  border: 0;
+  border-radius: 2rem;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  background: var(--purple);
+  box-shadow: 0 0.7rem 1.5rem rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+button:hover {
+  background: #a94df0;
+}
+
+main > section:first-child > div:nth-child(2) h2,
+main > section:nth-child(3) h1,
+main > section:nth-child(5) h1,
+main > section:nth-child(6) h1 {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+main > section:first-child > div:nth-child(2) h2,
+main > section:nth-child(3) h1,
+main > section:nth-child(5) h1 {
+  color: var(--purple);
+}
+
+main > section:first-child > div:nth-child(2) > div,
+main > section:nth-child(3) > div,
+main > section:nth-child(5) > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+main > section:first-child > div:nth-child(2) > div > div {
+  text-align: center;
+}
+
+main > section:first-child img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+main > section:first-child h3 {
+  margin: 1rem 0 0.25rem;
+  font-size: 1.2rem;
+}
+
+main > section:first-child > div:nth-child(2) p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+main > section:nth-child(2) {
+  color: #fff;
+  background: var(--purple);
+}
+
+main > section:nth-child(2) > div {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+main > section:nth-child(2) > div > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+}
+
+main > section:nth-child(2) p {
+  margin: 0.25rem 0;
+}
+
+main > section:nth-child(2) p:first-of-type {
+  font-weight: 700;
+}
+
+main > section:nth-child(2) p:last-of-type {
+  font-style: italic;
+}
+
+main > section:nth-child(3) {
+  background: #fff;
+}
+
+main > section:nth-child(3) > div > div {
+  position: relative;
+  padding-bottom: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(7, 22, 41, 0.12);
+  overflow: hidden;
+}
+
+main > section:nth-child(3) > div > div > img:first-child {
+  width: 100%;
+  height: 150px;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+main > section:nth-child(3) > div > div > img:first-child::after {
+  content: "▶";
+}
+
+main > section:nth-child(3) h2,
+main > section:nth-child(3) p,
+main > section:nth-child(3) h3 {
+  padding: 0 1rem;
+}
+
+main > section:nth-child(3) h2 {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
+
+main > section:nth-child(3) p {
+  color: #666;
+}
+
+main > section:nth-child(3) > div > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+main > section:nth-child(3) > div > div > div img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+main > section:nth-child(3) h3 {
+  margin: 0;
+  color: var(--purple);
+  font-size: 0.9rem;
+}
+
+main > section:nth-child(3) > div > div > div:last-child > div {
+  display: flex;
+  gap: 0.1rem;
+  padding: 0;
+}
+
+main > section:nth-child(3) > div > div > div:last-child > div img {
+  width: 16px;
+  height: 16px;
+  border-radius: 0;
+}
+
+main > section:nth-child(3) > div > div > div:last-child p {
+  margin: 0;
+  padding: 0;
+  color: var(--purple);
+}
+
+main > section:nth-child(4) {
+  background: var(--dark);
+}
+
+main > section:nth-child(4) h1 {
+  color: #fff;
+  text-align: center;
+}
+
+main > section:nth-child(4) > div > div {
+  color: #fff;
+  text-align: center;
+}
+
+main > section:nth-child(4) > div > div > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+main > section:nth-child(4) h2 {
+  font-size: 1.1rem;
+}
+
+main > section:nth-child(4) p {
+  font-size: 0.95rem;
+}
+
+main > section:nth-child(4) + section {
+  background: #fff;
+  text-align: center;
+}
+
+main > section:nth-child(4) + section h1 {
+  color: var(--text);
+}
+
+main > section:nth-child(4) + section > div > div {
+  display: block;
+  text-align: center;
+}
+
+main > section:nth-child(4) + section > div > div > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+main > section:nth-child(4) + section h2 {
+  font-size: 1.1rem;
+}
+
+main > section:nth-child(4) + section p {
+  color: #666;
+}
+
+main > section:nth-child(4) + section + section {
+  background: #fff;
+}
+
+main > section:nth-child(4) + section + section > div {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+main > section:nth-child(4) + section + section > div > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+main > section:nth-child(4) + section + section > div > div > div {
+  padding: 1.5rem;
+}
+
+main > section:nth-child(4) + section + section h2 {
+  font-size: 1.2rem;
+}
+
+main > section:nth-child(4) + section + section p {
+  color: #666;
+}
+
+footer {
+  padding: 3rem 7% 1.5rem;
+  color: #fff;
+  background: var(--dark);
+}
+
+footer > div {
+  display: block;
+  text-align: center;
+}
+
+footer > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer img {
+  width: 150px;
+}
+
+footer > div > div > div {
+  display: flex;
+  gap: 1rem;
+}
+
+footer > div > div > div img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+}
+
+footer p {
+  margin: 2rem 0 0;
+  color: #8b98a8;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 1.5rem 5%;
+  }
+
+  header > div > div {
+    gap: 1rem;
+  }
+
+  main > section:first-child > div:nth-child(2) > div,
+  main > section:nth-child(3) > div,
+  main > section:nth-child(5) > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main > section:nth-child(2) > div {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  header > div {
+    display: block;
+    text-align: center;
+  }
+
+  header > div > a img {
+    width: 140px;
+  }
+
+  header > div > div {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  main > section:first-child {
+    min-height: 1000px;
+  }
+
+  main > section:first-child > div:nth-child(2) > div,
+  main > section:nth-child(3) > div,
+  main > section:nth-child(5) > div,
+  main > section:nth-child(4) + section + section > div > div {
+    grid-template-columns: 1fr;
+  }
+
+  main > section:nth-child(2) > div {
+    display: block;
+    text-align: center;
+  }
+
+  main > section:nth-child(2) > div > img {
+    margin-bottom: 1rem;
+  }
+
+  footer > div > div {
+    display: block;
+  }
+
+  footer > div > div > div {
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+}
